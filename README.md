@@ -7,10 +7,17 @@ This will take two parameters:
     2. Host of the Cloudera Manager
 
 It will then perform the following actions: 
+
     1. Restart the Cloudera Cluster 
+    
     2. Check the health of the following services 
+    
       1. HDFS 
+      
       2. YARN 
+      
       3. ZOOKEEPER
+      
     3. If the health of any of the services is not good it will then try to restart the service 3 times. 
+    
     4. Upon failure to restart the service the script will exit.
